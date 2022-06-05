@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import { Card, CardText, CardImg, CardBody, CardTitle} from 'reactstrap';
 
 class DishDetail extends Component{
-    constructor(props) {
-        super(props);
-    }
-
     renderDish(dish) {
         return (
             <div className="col-12 col-md-5 m-1">
