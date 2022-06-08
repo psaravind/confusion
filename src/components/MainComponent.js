@@ -5,6 +5,7 @@ import Contact from './ContactComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import DishDetail from './DishdetailComponent';
+import About from './AboutComponent';
 import { DISHES } from '../shared/dishes';
 import { COMMENTS } from '../shared/comments';
 import { LEADERS } from '../shared/leaders';
@@ -48,6 +49,7 @@ class Main extends Component {
                 <Routes>
                     <Route path="/home" element={<HomePage />} />
                     <Route exact path="/menu" element={<Menu dishes={this.state.dishes} />} />
+                    <Route path="/aboutus" element={<About leaders={this.state.leaders} />} />
                     <Route path="/menu/:dishId" element={<DishWithId />} />
                     <Route exact path="/contactus" element={<Contact />} />
                     <Route path="/" element={<Navigate to="/home" />} />
